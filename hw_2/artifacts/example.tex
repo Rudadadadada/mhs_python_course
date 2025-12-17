@@ -1,0 +1,30 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{graphicx}
+\usepackage{array}
+\begin{document}
+\title{HW2: LaTeX generation}
+\author{}
+\maketitle
+\begin{table}[h]
+\centering
+\begin{tabular}{lc}
+\hline
+Фамилия & Имя \\
+Рудаков & Никита \\
+\hline
+\end{tabular}
+\caption{Таблица с фамилией и именем}
+\label{tab:sample}
+\end{table}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.3\textwidth]{sample.png}
+\caption{Красный квадрат}
+\label{fig:sample}
+\end{figure}
+
+\end{document}
