@@ -58,10 +58,8 @@ def build_pdf() -> None:
             stderr=subprocess.STDOUT,
         )
         output = result.stdout.decode("utf-8", errors="replace")
-        # Если PDF создан, считаем успешным даже при ненулевом коде возврата
         if PDF_PATH.exists():
             return
-        # Если PDF не создан, выводим ошибку
         raise RuntimeError(f"PDF не сгенерирован. Вывод pdflatex:\n{output}")
     except FileNotFoundError as exc:
         raise RuntimeError("pdflatex не установлен, установите TeXLive") from exc
