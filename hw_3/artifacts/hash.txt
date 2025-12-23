@@ -1,0 +1,4 @@
+hash(A) = 12
+hash(C) = 12
+hash(AB) = 12
+hash(CD) = 12
